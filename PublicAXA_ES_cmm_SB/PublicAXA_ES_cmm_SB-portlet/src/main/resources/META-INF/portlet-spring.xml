@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.axa.portal.esp.services.SB.service.cmmCacheLocalService" class="com.axa.portal.esp.services.SB.service.impl.cmmCacheLocalServiceImpl" />
+	<bean id="com.axa.portal.esp.services.SB.service.cmmCacheService" class="com.axa.portal.esp.services.SB.service.impl.cmmCacheServiceImpl" />
+	<bean id="com.axa.portal.esp.services.SB.service.persistence.cmmCachePersistence" class="com.axa.portal.esp.services.SB.service.persistence.cmmCachePersistenceImpl" parent="basePersistence" />
+</beans>

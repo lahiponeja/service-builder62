@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.axa.portal.esp.services.SB.model.cmmCache" />
+	<class name="com.axa.portal.esp.services.SB.model.impl.cmmCacheImpl" table="cmm_cmmCache">
+		<cache usage="read-write" />
+		<id name="cmmId" type="long">
+			<generator class="increment" />
+		</id>
+		<property name="hashKey" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="hashValue" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="hashDateUpdate" type="org.hibernate.type.TimestampType" />
+	</class>
+</hibernate-mapping>

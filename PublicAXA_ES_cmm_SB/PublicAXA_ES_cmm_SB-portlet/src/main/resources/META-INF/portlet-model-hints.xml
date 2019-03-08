@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.axa.portal.esp.services.SB.model.cmmCache">
+		<field name="cmmId" type="long" />
+		<field name="hashKey" type="String" />
+		<field name="hashValue" type="String" />
+		<field name="hashDateUpdate" type="Date" />
+	</model>
+</model-hints>
